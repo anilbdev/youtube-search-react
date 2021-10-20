@@ -4,11 +4,12 @@ export class SearchBar extends Component {
     state={term:''}
     inputChange=(event)=>{
         this.setState({term:event.target.value})
+        
     }
     onFormSubmit=(event)=>{
         event.preventDefault()
 
-        //callback from parent
+        this.props.onFormSubmit(this.state.term)
     }
     render() {
         return (

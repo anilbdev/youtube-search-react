@@ -7,6 +7,7 @@ export default axios.create({
     params:{
         part:'snippet',
         maxResults:5,
-        Key:KEY
+        Key:KEY,
+        type:'video'
     }
 })
